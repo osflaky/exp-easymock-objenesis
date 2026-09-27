@@ -1,0 +1,219 @@
+<!--
+
+    Copyright 2006-2026 the original author or authors.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+<html lang="en">
+<head>
+  <title>Release notes</title>
+</head>
+<body>
+
+<h1>Version 3.6 (2026-08-02)</h1>
+
+<ul>
+  <li>Build on Java 26</li>
+  <li>Fix a caching issue when objenesis is on a parent class loader</li>
+  <li>Bump actions/checkout from 7.0.0 to 7.0.1 (#514)</li>
+  <li>Bump actions/github-script from 8 to 9 (#494)</li>
+  <li>Bump actions/setup-java from 5.5.0 to 5.6.0 (#513)</li>
+  <li>Bump com.github.spotbugs:spotbugs-maven-plugin from 4.10.2.0 to 4.10.3.0 (#512)</li>
+  <li>Bump com.mycila:license-maven-plugin from 4.6 to 5.1.1 (#515)</li>
+  <li>Bump net.bytebuddy:byte-buddy from 1.18.10 to 1.18.11 (#509)</li>
+  <li>Bump org.apache.maven.plugins:maven-compiler-plugin from 3.14.1 to 3.15.0 (#483)</li>
+  <li>Bump org.apache.maven.plugins:maven-enforcer-plugin from 3.6.2 to 3.6.3 (#496)</li>
+  <li>Bump org.apache.maven.plugins:maven-jar-plugin from 3.5.0 to 3.5.1 (#517)</li>
+  <li>Bump org.apache.maven.plugins:maven-resources-plugin from 3.4.0 to 3.5.0 (#489)</li>
+  <li>Bump org.apache.maven.plugins:maven-shade-plugin from 3.6.1 to 3.6.2 (#490)</li>
+  <li>Bump org.apache.maven.plugins:maven-site-plugin from 3.21.0 to 3.22.0 (#498)</li>
+  <li>Bump org.apache.maven.plugins:maven-surefire-plugin from 3.5.5 to 3.5.6 (#499)</li>
+  <li>Bump org.gaul:modernizer-maven-plugin from 3.4.0 to 3.5.0 (#516)</li>
+  <li>Bump org.sonatype.central:central-publishing-maven-plugin from 0.10.0 to 0.11.0 (#505)</li>
+</ul>
+
+<h1>Version 3.5 (2026-01-22)</h1>
+
+<ul>
+  <li>Move to central-publishing-maven-plugin</li>
+  <li>Unable to instantiate when on modulepath (#358)</li>
+  <li>JPMS: sun libraries aren't available (#332)</li>
+  <li>Prepare module-test for next development iteration (#296)</li>
+  <li>Build fails resolving org.objenesis:objenesis-parent:pom:3.4-SNAPSHOT (#295)</li>
+  <li>Bump multiple plugins and dependencies</li>
+</ul>
+
+<h1>Version 3.4 (2024-05-05)</h1>
+
+<ul>
+  <li>Add Security Policy (#238)</li>
+  <li>Set permissions for ci.yml (#223)</li>
+  <li>Trivial Markdown fix. (#210)</li>
+  <li>Remove JUnit 4 (#201)</li>
+  <li>Replace PAX exam (#200)</li>
+  <li>Remove GAE specific code (#199)</li>
+  <li>Class not found error when using Objenesis in a Java 9 module (#160)</li>
+  <li>Bump multiple plugins and dependencies</li>
+</ul>
+
+<h1>Version 3.3 (2022-08-01)</h1>
+
+<ul>
+  <li>migrate from TravisCI to GitHub Actions (#88)</li>
+  <li>`org.objenesis:objenesis-test` missing in Maven Central (#85)</li>
+  <li>added instructions for running Android TCK for Windows users (#84)</li>
+  <li>Copyright and Owner is missing in license (#83)</li>
+  <li>add Dependabot (#77)</li>
+</ul>
+
+<h1>Version 3.2 (2021-03-21)</h1>
+
+<ul>
+  <li>Add Dependencies Manifest Entry (#81)</li>
+  <li>Objenesis can't be compiled on Android SDK &lt; 26 (#79)</li>
+  <li>PercClassLoader misspelled in pom.xml (#76)</li>
+</ul>
+
+<h1>Version 3.1 (2019-10-04)</h1>
+
+<ul>
+    <li>ProxyingInstantiator can't instantiate classes in java package or bootstrap class loader (#73)</li>
+    <li>Travis build:  openjdk8, openjdk11 (#72)</li>
+    <li>Fix "Apache License, Version 2.0" spelling (#71)</li>
+</ul>
+
+<h1>Version 3.0.1 (2018-10-18)</h1>
+
+<ul>
+    <li>No Automatic-Module-Name in objenesis (#66)</li>
+</ul>
+
+<h1>Version 3.0 (2018-10-07)</h1>
+
+<ul>
+  <li>Drop JRockit support (#64)</li>
+  <li>Move lower support to Java 1.8 (#63)</li>
+  <li>Replace findbugs by spotbugs (#62)</li>
+  <li>ClassDefinitionUtils doesn't compile with Java 11 (#61)</li>
+  <li>update pom.xml for maven plugins (#60)</li>
+  <li>Test errors with Java 10 (#59)</li>
+  <li>Please remove the hidden .mvn directory from the source tarball (#57)</li>
+  <li>Move Android TCK API 26 because objenesis now requires it (#65(</li>
+</ul>
+
+<h1>Version 2.6 (2017-06-20)</h1>
+
+<ul>
+  <li>App Engine Java 8 Runtime support (#51)</li>
+  <li>Improve Java 9 support (#53)</li>
+  <li>Clarify serialization strategy behavior enhancement (#54)</li>
+  <li>SunReflectionFactoryInstantiator not working if parent class constructor isn't public (#33)</li>
+  <li>Validate Android O (#52)</li>
+  <li>Drop Java 5 support (#55)</li>
+</ul>
+
+<h1>Version 2.5.1 (2017-01-17)</h1>
+
+<ul>
+  <li>Test failure: org.objenesis.instantiator.basic.ClassDefinitionUtilsTest on debian (#49)</li>
+</ul>
+
+<h1>Version 2.5 (2017-01-12)</h1>
+
+<ul>
+  <li><strong>Support JDK 9</strong> (tested on 9-ea+151-jigsaw) (#45)</li>
+  <li>Expose MagicInstantiator internal ObjectInstantiator (#43)</li>
+  <li>Move OSGi tests to Pax-Exam</li>
+</ul>
+
+<h1>Version 2.4 (2016-05-23)</h1>
+
+<ul>
+  <li>Objenesis license incompatible with EPL (#40)</li>
+  <li>Tests of the Android TCK are never failing (#41)</li>
+</ul>
+
+<h1>Version 2.3 (2016-05-10)</h1>
+
+<ul>
+  <li>Android N : standard android instantiators don't work (#37)</li>
+  <li>Fixed an issue with Android N's OpenJDK where invalid instantiator is picked (#38)</li>
+  <li>Build fail on old versions because of license check (#39)</li>
+</ul>
+
+<h1>Version 2.2 (2015-07-24)</h1>
+
+<ul>
+   <li>New <code>SearchWorkingInstantiator</code> allowing to identify which instantiator can work on a platform (#34)</li>
+   <li>JVM_NAME is used instead of VENDOR (#32)</li>
+   <li>sun.misc missing from Import-Package header in manifest (#31)</li>
+   <li>New ProxyInstantiator extending a class to bypass the super constructor (#23)</li>
+   <li>New MagicInstantiator using MagicAccessorImpl (#35)</li>
+   <li>Partial Google App Engine support. See <a href="https://github.com/easymock/objenesis/blob/master/SupportedJVMs.md#google-app-engine">here</a> (#15)</li>
+</ul>
+
+<h1>Version 2.1 (2013-10-10)</h1>
+
+<ul>
+  <li>Support for Android API level 18 (#23)</li>
+  <li>Have the tck returning a value different from zero in case of failures (#24)</li>
+  <li>Make it easier to call the TCK programmatically (#25)</li>
+	<li>Show the actual instantiator implementation used by the TCK	 (#26)</li>
+	<li>Explicit support for OpenJDK (#27)</li>
+</ul>
+
+<h1>Version 2.0 (2013-08-21)</h1>
+
+<ul>
+  <li>Upgrade to Java 5 (#21)</li>
+  <li>Remove synchronization requirement when retrieving an instantiator from cache (#22)</li>
+</ul>
+
+<h1>Version 1.4 (2013-08-16)</h1>
+
+<ul>
+  <li>Android Gingerbread support (#18)</li>
+  <li>New instantiator using Unsafe.allocateInstance() (#19)</li>
+  <li>Optimisation when instantiator cache isn't used (#14)</li>
+</ul>
+
+<h1>Version 1.3 (2013-01-23)</h1>
+
+<ul>
+  <li>Dalvik (Android) support (#13)</li>
+  <li>Android TCK (#13)</li>
+  <li>Allow to compile on any JVM (#13)</li>
+</ul>
+
+<h1>Version 1.2 (2010-03-15)</h1>
+
+<ul>
+  <li>Now under Apache 2.0 license</li>
+  <li>objenesis.jar is an OSGi bundle</li>
+</ul>
+
+<h1>Version 1.1 (2007-12-09)</h1>
+
+<ul>
+  <li>Standard support of Aonix PERC (no Serialization support)</li>
+</ul>
+
+<h1>Version 1.0 (2007-02-14)</h1>
+
+<ul>
+  <li>Initial version, support for Sun Hotspot, GCJ and BEA JRockit JVMs</li>
+</ul>
+
+</body>
+</html>

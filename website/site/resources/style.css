@@ -1,0 +1,379 @@
+/**
+ * Copyright 2006-2026 the original author or authors.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+/*---------------------------------------------------------------------------
+ *  Two- and three-column layout
+ */
+
+#banner {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 90px;
+}
+
+#left {
+    position: absolute;
+    z-index: 2;
+    left: 8px;
+    width: 184px;
+    top: 100px;
+    bottom: 80px;
+    margin: 0;
+    padding: 0;
+}
+
+#right {
+    position: absolute;
+    z-index: 1;
+    right: 8px;
+    width: 184px;
+    top: 100px;
+    bottom: 80px;
+    margin: 0;
+    padding: 0;
+}
+
+.Content3Column {
+    position: absolute;
+    top: 100px;
+    bottom: 80px;
+    left: 208px;
+    right: 216px;
+}
+
+.Content2Column {
+    position: absolute;
+    top: 100px;
+    bottom: 80px;
+    left: 208px;
+    right: 16px;
+}
+
+#center {
+    z-index: 3;
+    margin: 0;
+    border: none;
+    padding-bottom: 8px;
+}
+
+
+/*---------------------------------------------------------------------------
+ *  Default element styles
+ */
+
+body {
+    position: relative;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    border: 0;
+
+    font-family: helvetica, arial, sans-serif;
+    font-size: 12px;
+
+    background-color: white;
+    color: black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+a:link { color: #6e61ad; }
+a:active { color: red; }
+a:hover { color: red; }
+a:visited { color: black; }
+
+iframe {
+    width:100%;
+    height: 800px;
+    border: 0;
+}
+
+img {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    border: 0;
+    padding: 0;
+    margin: 0 0 10px;
+}
+
+blockquote {
+    margin-bottom: 10px;
+}
+
+td {
+    font-size: 12px;
+    padding: 2px;
+}
+
+th {
+    font-size: 12px;
+    font-weight: bold;
+    white-space: nowrap;
+    padding: 2px;
+}
+
+th.Row {
+    text-align: left;
+    vertical-align: top;
+}
+
+ul, ol {
+    border: 0;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 12px;
+    margin-left: 20px;
+}
+
+
+/*---------------------------------------------------------------------------
+ *  Page banner
+ */
+
+#banner {
+    margin: 0;
+    border: 0;
+    border-bottom: 1px solid #c8f;
+    padding: 0;
+    background-color: #e0d0f0;
+    color: #606;
+    vertical-align: bottom;
+}
+
+#banner a { text-decoration: none; }
+#banner a:visited { color: #6e61ad; }
+#banner a:hover { color: red; }
+#banner a:active { color: red; }
+
+#logo {
+    position: absolute;
+    top: 5px;
+    left: 8px;
+}
+
+#versions {
+    position: absolute;
+    width: auto;
+    right: 0;
+    top: 0;
+    margin: 8px;
+    font-weight: normal;
+}
+
+/*---------------------------------------------------------------------------
+ *  Page content
+ */
+
+#content {
+    margin: 0;
+    background-color: white;
+    color: black;
+    height: 100%;
+}
+
+#content h1 {
+    width: 100%;
+    font-size: 18px;
+    background-color: #6e61ad;
+    color: white;
+   padding: 2px 2px 2px 6px;
+   margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+#content .FirstChild {  /* IE doesn't understand first-child pseudoelement */
+    margin-top: 0;
+}
+
+#content a { text-decoration: underline; }
+#content a:link { color: #6e61ad; }
+#content a:visited { color: #6e61ad; }
+#content a:active { color: red; }
+#content a:hover { color: red; }
+
+#content h2 {
+    margin-top: 24px;
+    border-top: 1px solid #060;
+    margin-bottom: 16px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #6e61ad;
+    padding: 2px;
+}
+
+#content li {
+    margin-bottom: 6px;
+}
+
+#content th {
+    background-color: #afa;
+}
+
+#content td {
+    background-color: #dfd;
+}
+
+pre {
+    padding: 4px;
+    font-family: courier new, monospace;
+    font-size: 11px;
+    border: 1px solid #6e61ad;
+    background-color: #e0d0f0;
+    color: black;
+}
+
+.highlight {
+    background-color: #6e61ad;
+    border: 1px dotted #060;
+    padding: 5px;
+}
+
+
+
+/*---------------------------------------------------------------------------
+ *  Footer
+ */
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 8px 16px;
+    border-top: 1px solid #c8f;
+    background-color: #e0d0f0;
+    color: #606;
+    text-align: center;
+    font-size: 11px;
+}
+
+#footer a { text-decoration: none; }
+#footer a:link { color: #6e61ad; }
+#footer a:visited { color: #6e61ad; }
+#footer a:active { color: red; }
+#footer a:hover { color: red; }
+
+/*---------------------------------------------------------------------------
+ *  Side panels
+ */
+
+.SidePanel {
+    background-color: white;
+    padding: 0;
+    font-size: 11px;
+}
+
+.SidePanel h1 {
+    margin: 0;
+    border: 0;
+    padding: 4px;
+
+    color: #6e61ad;
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+.SidePanel a { text-decoration: none; }
+.SidePanel a:link { color: #6e61ad; }
+.SidePanel a:visited { color: #6e61ad; }
+.SidePanel a:active { color: red; }
+.SidePanel a:hover { color: red; }
+
+/*---------------------------------------------------------------------------
+ *  Menus
+ */
+
+.MenuGroup {
+    border-left: 1px solid #6e61ad;
+    border-top: 1px solid #6e61ad;
+    border-bottom: 1px solid white; /* IE work-around */
+
+    margin-bottom: 8px;
+    background-color: white;
+    color: #060;
+}
+
+.MenuGroup ul {
+    margin: 0;
+    padding-left: 4px;
+    list-style-type: none;
+}
+
+.MenuGroup li {
+    padding: 2px;
+}
+
+.MenuGroup .currentLink {
+/*    background-color: #060;*/
+    background-color: #e0d0f0;
+    color: #000;
+}
+
+
+/*---------------------------------------------------------------------------
+ *  News panel
+ */
+
+.NewsGroup {
+    border-left: 1px solid #afa;
+    border-top: 1px solid #afa;
+    border-bottom: 1px solid white; /* IE workaround */
+    margin-bottom: 8px;
+
+    color: #060;
+}
+
+.NewsItem {
+    margin: 4px;
+}
+
+.NewsDate {
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.NewsText {
+    padding: 0;
+    margin: 0 0 8px;
+}
+
+.NewsText a { text-decoration: underline; }
+.NewsText a:link { color: #060; }
+.NewsText a:visited { color: #060; }
+.NewsText a:active { color: red; }
+.NewsText a:hover { color: red; }
+
+.NewsMore {
+    font-size: smaller;
+    margin: 8px 4px 4px;
+    text-align: left;
+}
+
+.NewsGroup td {
+    font-size: 12px;
+}

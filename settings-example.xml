@@ -1,0 +1,13 @@
+<!--
+To be able to deploy on Maven Central, add the servers below
+-->
+
+<settings>
+  <servers>
+    <server>
+      <id>central</id>
+      <username>myusername</username>
+      <password>token</password>
+    </server>
+  </servers>
+</settings>
